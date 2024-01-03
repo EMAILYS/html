@@ -1,0 +1,282 @@
+<html>
+    <head><title>新竹</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>        
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                rtl: true
+            });
+        });
+    </script>
+    <style>
+        *{
+            margin:0;
+            color:gray;
+            text-align:center;
+        }
+        /* top */
+        .top{
+             background-color: white;
+        }
+        .top .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:10px;
+        }
+        .top .logo{
+            /*border:1px solid red;*/
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .top .logo img{
+            width: 100px;
+            vertical-align: middle;
+        }
+        .top .top-nav{
+            /*border:1px solid red;*/
+            font-size: 25px;
+            font-weight: bold;       
+        }
+        .top .top-nav a{
+            text-decoration: none;
+        }
+        /* nav */
+        .nav {
+            background-color:#019858;
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul {
+            list-style-type: none;  
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color: #019858; 
+        }
+        .nav li {
+            float: left; 
+        }
+        .nav li a {    
+            display: block;  
+            color: white;  
+            text-align: center;  
+            padding: 15px 16px;  
+            text-decoration: none;  
+        }
+        .nav li a:hover {
+            background-color: #02C874; 
+        }
+        /*下拉式選單*/
+        .dropdown:hover .dropdown-content {
+            display: block;   /*使用block呈現上下排列*/
+        }
+        li.dropdown:hover{
+            background-color: #333;  /*設定背景顏色*/
+        }
+        .dropdown-content {  /*設定下拉選單內容格式*/
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 130px;
+            z-index: 1;
+        }
+        .dropdown-content a {/*設定下拉選單連結內容格式*/
+            color: black;
+            padding: 11px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* slider */
+        .slider{
+            background-color: black;
+        }
+        /* banner*/
+        .banner{
+            background-image: linear-gradient(#73BF00,#0396FF);
+            padding:30px;
+        }
+        .banner h1{
+            padding: 20px;
+        }        
+        /*faculty*/
+        .faculty {
+            display: block;
+            justify-content: center;
+            background-color:white;
+            padding:40px;
+        }
+        .faculty h2 {
+            font-size: 25px;
+            color: rgb(50,51,52);
+            padding-bottom:40px;
+        }
+        .faculty .container {
+            /*border:1px solid red;*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .faculty .teacher{
+            /*border:1px solid blue;*/
+            display:block;
+            text-decoration: none;
+        }
+        .faculty .teacher img{
+            height: 200px;
+            width: 200px;
+        }
+        .faculty .teacher h3{
+            color: White;
+            background-color: rgba(39,40,34,.500);
+            text-align: center;           
+        }
+        /*contact*/
+        .contact {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;                
+        }
+        .contact img{
+            height: 150px;
+            width: 200px;
+            }
+        .contact .container{
+            display: block;
+        }
+        .contact .container h2{
+            color: rgb(54, 82, 110);
+            font-size: 25px;
+        }
+        .contact .container .infos{
+            display:flex;
+            margin-top: 20px; 
+        }
+        .contact .container .infos .left{
+            display:block;
+            text-align: left;
+            margin-right: 20px;
+        }
+        .contact .container .infos .left b{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            text-decoration: bold;
+            color: Gray;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .contact .container .infos .left span{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            color: rgba(39,40,34,0.5);
+            font-size: 16px;
+            padding-left: 27px;
+        }
+        .contact .container .infos .te{
+            height: 100px;               
+        }
+        .contact .container .infos .te img{
+            width: 200px;
+            height:150px;
+        }
+        /*footer*/
+        .footer{
+            display: flex;
+            justify-content: center;
+            background-color: 	#006000;
+            padding: 30px 0;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="top">
+            <div class="container">
+                <div class="logo">
+                  <img src="https://cw1.tw/CW/images/article/201608/article-57a97c3541b18.jpg">
+                  新竹風晴
+                </div>
+                <div class="top-nav">
+                  
+                  <a href="https://tourism.hccg.gov.tw/hot_1_2___0">2023新竹</a>
+                  
+                </div>
+              </div>
+        </div>
+        <div class="nav">   
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#introduction">新竹歷史</a></li>
+                <li  class="dropdown"><a href="#faculty">新竹特色</a>
+                    <div class="dropdown-content">
+                        <a href="tt">美食</a>
+                        <a href="https://bunnyann.com/bunnyann106/">景點</a>
+                        <a href="https://tourism.hccg.gov.tw/hot_1_3___0">古蹟</a>
+                    </div>                       
+                </li>
+                <li><a href="#about">相關資訊</a></li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="flexslider" style="direction:rtl">
+                <ul class="slides">
+                    <li><img src="https://fullfenblog.tw/wp-content/uploads/0142.jpeg" /></li>
+                    <li><img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_680/v1659684339/blog/vywu4gp8tricj0jbkpkq.jpg" /></li>
+                    <li><img src="https://static.popdaily.com.tw/u/202304/37bd5028-3041-45ce-903e-9f95329725db.jpg" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner" id="introduction">
+            <h1>新竹簡介</h1>
+            <h1>新竹市是漢人最早落腳的開發城市，清朝時叫竹塹，那時候文風鼎盛，有鄭用錫，好多美術家在這裡，比當時的台北還要繁盛...</h1>
+            
+        </div>
+        <div class="faculty" id="faculty">
+            <h2>特色美食介紹</h2>
+            <div class="container">
+                <a class="teacher" href="">
+                    <img src="https://assetsv4.tripmoment.com/uploads/tinymcebody/u9024/2022/10/14/eb4d6ea1bbbc92fe65f845ffeb8626ac.jpg" />
+                    <h3>水潤餅</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="https://assetsv4.tripmoment.com/uploads/tinymcebody/u9024/2022/10/26/a7394cdc53ea18eba20b2c58cb119899.jpg" />
+                    <h3>豆花</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="https://assetsv4.tripmoment.com/uploads/tinymcebody/u9024/2022/10/14/326ecb2ada72ba673451a9bea00323fd.jpg" />
+                    <h3>白麥芽糖餅</h3>
+                </a>        
+            </div>
+        </div>
+        <div class="contact" id="about">
+            <div class="container">
+                <h2>相關資訊</h2>
+                <div class="infos">
+                    <div class="left">
+                        <b>新竹縣橫山鄉的內灣老街</b>
+                        <span>312新竹縣橫山鄉中正路</span>
+                        <a class="teacher" >
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipMfpO44Ot5mQHzkPQeB0zuMLfvOJQ94CBPxtak4=s680-w680-h510"/>                        
+                    </div>
+                    <div class="left">
+                    <img src="https://playqueen888.com/upload/images/1Q6A8026.jpg"/>  
+                    <b>新竹縣北埔鄉的北埔老街</b>
+                    <span>314新竹縣北埔鄉北埔街</span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            &copy;https://asiayo.com/event/hsinchu_twfit.html
+        </div>
+     </body>
+</html>
